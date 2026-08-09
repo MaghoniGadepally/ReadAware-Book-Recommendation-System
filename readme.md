@@ -35,12 +35,13 @@ To keep this repository lightweight and optimized, heavy pre-trained binary pick
 
 3. **Configure Environment Variables**:
    Create a local `.env` file and replace the credentials with your actual system connection strings:
+   Database password in the file config.py and API key in auth.py
    ```python
-   DATABASE_URL = "mysql+pymysql://username:password@localhost/readaware"
+   MYSQL_PASSWORD = "Your_SQL_Password"
    EMAIL_SECRET_KEY = "YOUR_API_KEY_HERE"
    ```
 
-4. **Launch the backend server**:
+5. **Launch the backend server**:
    ```bash
    uvicorn main:app --reload
    ```
